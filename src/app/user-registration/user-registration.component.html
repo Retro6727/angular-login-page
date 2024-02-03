@@ -1,0 +1,16 @@
+
+<form (ngSubmit)="Onsubmit()">
+    <div class="container">
+        <label for="username">Username: </label>
+        <input type="text" id="username" [(ngModel)]="registerObj.username" [ngModelOptions]="{standalone:true}" required><br>
+        <label for="email">Email ID: </label>
+        <input type="text" id="email" [(ngModel)]="registerObj.email" [ngModelOptions]="{standalone:true}" required><br>
+        <label for="password">Password: </label>
+        <input type="password" id="password" [(ngModel)]="registerObj.password" [ngModelOptions]="{standalone:true}" required><br>
+
+        <button action="submit()">Register</button><br>
+
+        Already have account?? <a href="/login">Login</a>
+
+    </div>
+</form>

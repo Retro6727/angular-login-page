@@ -1,0 +1,12 @@
+
+<form>
+    <div class="container">
+        <label for="username">Username:</label> <input type="text" id='username' placeholder="Enter your username:" [(ngModel)]="loginObj.username" [ngModelOptions]="{standalone: true}" required><br>
+        <label for="password">Password:</label> <input type="password" id='password' placeholder="Enter your password:" [(ngModel)]="loginObj.password" [ngModelOptions]="{standalone: true}" required><br>
+        <button action="onLogin()">Login</button><br>
+
+        New User?? <a href="/register">Register here</a>
+
+    </div>
+
+</form>
